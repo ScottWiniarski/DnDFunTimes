@@ -5,30 +5,27 @@ namespace DnDFunTime
 {
     public class CreateSpell : ActiveSpell
     {
-        private string _name = "Minor Illusion";
+        /*private string _name = "Minor Illusion";
         private string _Description = "Create a noise or image at a chosen location.";
         private int _SpellLevel = 0;
         private string _SpellType = "Illusion";
         private string _CastTime = "Action";
         private string _Duration = "1 Minute";
-        private bool _IsActive = true;
+        private bool _IsActive = true;*/
 
         public CreateSpell(string name, string description, int spellLevel, string spellType, string castTime,
             string duration, bool isActive)
         {
-            ActiveSpell newSpell = new ActiveSpell();
-            newSpell.Name = name;
-            newSpell.Description = description;
-            newSpell.SpellLevel = spellLevel;
-            newSpell.SpellType = spellType;
-            newSpell.CastTime = castTime;
-            newSpell.Duration = duration;
-            newSpell.IsActive = isActive;
-
-            //return newSpell;
+            this.Name = name;
+            this.Description = description;
+            this.SpellLevel = spellLevel;
+            this.SpellType = spellType;
+            this.CastTime = castTime;
+            this.Duration = duration;
+            this.IsActive = isActive;
         }
 
-        public string SpellName
+        /*public string SpellName
         {
             get => _name;
             set => _name = value;
@@ -64,7 +61,7 @@ namespace DnDFunTime
             string spellType, bool isActive)
         {
             
-        }
+        }*/
         /*public void LoadSpell()
         {
             CreateSpell spell = new CreateSpell();

@@ -23,7 +23,7 @@ namespace DnDFunTime
 
         public void WriteJson()
         {
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 3; i++)
             {
                 CreateSpell spell = new CreateSpell(spellNames[i], spellDescrip[i], spellLevels[i],
                     spellTypes[i], castTimes[i], durations[i], actives[i]);
