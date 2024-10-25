@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.IO;
 using System.Text.Json;
 
@@ -6,15 +7,14 @@ namespace DnDFunTime.FileHandlers
 {
     public class JSONFileOutput
     {
-        public string FileName = "DndSpells.json";
+        //public string FileName = "DndSpells.json";
 
-        public void PrintJson(CreateSpell newSpell)
+        public void WriteJson(ArrayList ListOfSpells)
         {
-            FileStream createStream = File.Create(FileName);
-            string jsonString = JsonSerializer.Serialize(newSpell);
+            var options = new JsonSerializerOptions {WriteIndented = true};
+            string jsonString = JsonSerializer.Serialize(ListOfSpells, options);
             Console.WriteLine(jsonString);
-            //JsonSerializer.Serialize(createStream, newSpell);
-            //Console.WriteLine(File.ReadAllTextAsync(FileName));
+            File.WriteAllText(@"C:\Users\Owner\RiderProjects\DnDFunTime\DndSpells.json", jsonString);
         }
     }
 }

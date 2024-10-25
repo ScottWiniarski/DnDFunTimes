@@ -1,0 +1,29 @@
+[
+  {
+    "IsActive": true,
+    "Name": "Minor Illusion",
+    "Description": "Create a noise or image",
+    "SpellLevel": 0,
+    "SpellType": "Illusion",
+    "CastTime": "Action",
+    "Duration": "1 Minute"
+  },
+  {
+    "IsActive": true,
+    "Name": "Cone of Cold",
+    "Description": "Shoot a cone of chilling frost",
+    "SpellLevel": 4,
+    "SpellType": "Evocation",
+    "CastTime": "Action",
+    "Duration": "Instant"
+  },
+  {
+    "IsActive": true,
+    "Name": "Ray of Frost",
+    "Description": "A beam of freezing air",
+    "SpellLevel": 0,
+    "SpellType": "Evocation",
+    "CastTime": "Action",
+    "Duration": "Instant"
+  }
+]

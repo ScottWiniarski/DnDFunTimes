@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Text.Json;
+using System.Xml;
 
 namespace DnDFunTime
 {
@@ -20,8 +22,7 @@ namespace DnDFunTime
         public string[] durations = {"1 Minute", "Instant", "Instant"};
         public bool[] actives = {true, true, true};
 
-
-        public void WriteJson()
+        public ArrayList PrepareSpellBook()
         {
             for (int i = 0; i < 3; i++)
             {
@@ -30,9 +31,7 @@ namespace DnDFunTime
 
                 ListOfSpells.Add(spell);
             }
-
-            string jsonString = JsonSerializer.Serialize(ListOfSpells);
-            Console.WriteLine(jsonString);
+            return ListOfSpells;
         }
     }
 }
